@@ -1,0 +1,6 @@
+framework module Pods_KloutApp_KloutAppUITests {
+  umbrella header "Pods-KloutApp-KloutAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

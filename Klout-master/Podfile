@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'KloutApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for KloutApp
+	pod 'XLPagerTabStrip', '~> 9.0'
+	pod 'AlamofireImage', '~> 4.1'
+	pod 'HFCardCollectionViewLayout'
+	pod 'Charts'
+	pod 'AFNetworking'
+	pod 'BDBOAuth1Manager'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Firestore'
+	pod 'GoogleSignIn'
+
+  target 'KloutAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'KloutAppUITests' do
+    # Pods for testing
+  end
+
+end

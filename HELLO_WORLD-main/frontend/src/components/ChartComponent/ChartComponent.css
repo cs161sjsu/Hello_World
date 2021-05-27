@@ -1,0 +1,10 @@
+.ChartComponent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Dropdown{
+    display: inline-block;
+    float: right;
+}

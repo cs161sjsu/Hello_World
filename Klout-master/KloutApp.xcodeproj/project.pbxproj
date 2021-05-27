@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		149DC2ECCC09E95E9DA8A298 /* Pods_KloutApp_KloutAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D8933DB43F0DC40135D2B4 /* Pods_KloutApp_KloutAppUITests.framework */; };
+		276C5EC225E5A3CB00A07369 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5EC125E5A3CB00A07369 /* LogInViewController.swift */; };
+		276C5EC725E5A3FF00A07369 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5EC625E5A3FF00A07369 /* OpeningViewController.swift */; };
+		276C5EFB25E5D91000A07369 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5EFA25E5D91000A07369 /* StatisticsViewController.swift */; };
+		276C5F0125EEC72100A07369 /* StatisticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F0025EEC72100A07369 /* StatisticsTableViewCell.swift */; };
+		276C5F0D25EED19E00A07369 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F0C25EED19E00A07369 /* ShareViewController.swift */; };
+		276C5F1225EED26500A07369 /* ShareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F1125EED26500A07369 /* ShareTableViewCell.swift */; };
+		276C5F1725EED30000A07369 /* AddAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F1625EED30000A07369 /* AddAccountTableViewCell.swift */; };
+		276C5F2225EEDDA900A07369 /* AccountStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F2125EEDDA900A07369 /* AccountStatisticsViewController.swift */; };
+		276C5F2825EEE02500A07369 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F2725EEE02500A07369 /* PostsViewController.swift */; };
+		276C5F3025EEE03B00A07369 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F2F25EEE03B00A07369 /* FollowersViewController.swift */; };
+		276C5F3525EEE04700A07369 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F3425EEE04700A07369 /* FollowingViewController.swift */; };
+		276C5F3A25F7366800A07369 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F3925F7366800A07369 /* Account.swift */; };
+		276C5F3F25F7467A00A07369 /* SocialParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F3E25F7467A00A07369 /* SocialParentViewController.swift */; };
+		276C5F4A25F7490100A07369 /* SharedKardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F4925F7490100A07369 /* SharedKardsViewController.swift */; };
+		276C5F6825F86B2400A07369 /* Kard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C5F6725F86B2400A07369 /* Kard.swift */; };
+		276E5D0625DC95D600C024DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E5D0525DC95D600C024DA /* AppDelegate.swift */; };
+		276E5D0825DC95D600C024DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E5D0725DC95D600C024DA /* SceneDelegate.swift */; };
+		276E5D0D25DC95D600C024DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276E5D0B25DC95D600C024DA /* Main.storyboard */; };
+		276E5D0F25DC95D900C024DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276E5D0E25DC95D900C024DA /* Assets.xcassets */; };
+		276E5D1225DC95D900C024DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276E5D1025DC95D900C024DA /* LaunchScreen.storyboard */; };
+		276E5D1D25DC95DA00C024DA /* KloutAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E5D1C25DC95DA00C024DA /* KloutAppTests.swift */; };
+		276E5D2825DC95DA00C024DA /* KloutAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E5D2725DC95DA00C024DA /* KloutAppUITests.swift */; };
+		276E5D3925DCA1EE00C024DA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E5D3825DCA1EE00C024DA /* SettingsViewController.swift */; };
+		27B892DC25F883FE00C651A3 /* KardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B892DB25F883FE00C651A3 /* KardViewController.swift */; };
+		27B892E725F8956100C651A3 /* KardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B892E625F8956100C651A3 /* KardCollectionViewCell.swift */; };
+		27C48FE62640BF61008817D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27C48FE52640BF61008817D6 /* GoogleService-Info.plist */; };
+		27C49031264350EA008817D6 /* AccountGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C49030264350E9008817D6 /* AccountGlobals.swift */; };
+		27C490412648F786008817D6 /* ChartStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C490402648F786008817D6 /* ChartStatistic.swift */; };
+		777E6D88724B4258D9E84590 /* Pods_KloutApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7BDCD92738ABAA2C94E227 /* Pods_KloutApp.framework */; };
+		CEB7FC68DBDE75911521A980 /* Pods_KloutAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE436AE0B19721A28070BDE /* Pods_KloutAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		276E5D1925DC95DA00C024DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 276E5CFA25DC95D600C024DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 276E5D0125DC95D600C024DA;
+			remoteInfo = KloutApp;
+		};
+		276E5D2425DC95DA00C024DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 276E5CFA25DC95D600C024DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 276E5D0125DC95D600C024DA;
+			remoteInfo = KloutApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23A0EFE17EF324C720E937D1 /* Pods-KloutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KloutApp.debug.xcconfig"; path = "Target Support Files/Pods-KloutApp/Pods-KloutApp.debug.xcconfig"; sourceTree = "<group>"; };
+		276C5EC125E5A3CB00A07369 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		276C5EC625E5A3FF00A07369 /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
+		276C5EFA25E5D91000A07369 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		276C5F0025EEC72100A07369 /* StatisticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewCell.swift; sourceTree = "<group>"; };
+		276C5F0C25EED19E00A07369 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		276C5F1125EED26500A07369 /* ShareTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareTableViewCell.swift; sourceTree = "<group>"; };
+		276C5F1625EED30000A07369 /* AddAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountTableViewCell.swift; sourceTree = "<group>"; };
+		276C5F2125EEDDA900A07369 /* AccountStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatisticsViewController.swift; sourceTree = "<group>"; };
+		276C5F2725EEE02500A07369 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		276C5F2F25EEE03B00A07369 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		276C5F3425EEE04700A07369 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		276C5F3925F7366800A07369 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		276C5F3E25F7467A00A07369 /* SocialParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialParentViewController.swift; sourceTree = "<group>"; };
+		276C5F4925F7490100A07369 /* SharedKardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedKardsViewController.swift; sourceTree = "<group>"; };
+		276C5F6725F86B2400A07369 /* Kard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kard.swift; sourceTree = "<group>"; };
+		276E5D0225DC95D600C024DA /* KloutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KloutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		276E5D0525DC95D600C024DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		276E5D0725DC95D600C024DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		276E5D0C25DC95D600C024DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		276E5D0E25DC95D900C024DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		276E5D1125DC95D900C024DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		276E5D1325DC95D900C024DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276E5D1825DC95DA00C024DA /* KloutAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KloutAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		276E5D1C25DC95DA00C024DA /* KloutAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KloutAppTests.swift; sourceTree = "<group>"; };
+		276E5D1E25DC95DA00C024DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276E5D2325DC95DA00C024DA /* KloutAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KloutAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		276E5D2725DC95DA00C024DA /* KloutAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KloutAppUITests.swift; sourceTree = "<group>"; };
+		276E5D2925DC95DA00C024DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276E5D3825DCA1EE00C024DA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		27B892DB25F883FE00C651A3 /* KardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KardViewController.swift; sourceTree = "<group>"; };
+		27B892E625F8956100C651A3 /* KardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KardCollectionViewCell.swift; sourceTree = "<group>"; };
+		27C48FE52640BF61008817D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27C49030264350E9008817D6 /* AccountGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountGlobals.swift; sourceTree = "<group>"; };
+		27C490402648F786008817D6 /* ChartStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartStatistic.swift; sourceTree = "<group>"; };
+		2AE436AE0B19721A28070BDE /* Pods_KloutAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KloutAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31CB3A2725874328BBBAB9C1 /* Pods-KloutApp-KloutAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KloutApp-KloutAppUITests.release.xcconfig"; path = "Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B7BDCD92738ABAA2C94E227 /* Pods_KloutApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KloutApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D8933DB43F0DC40135D2B4 /* Pods_KloutApp_KloutAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KloutApp_KloutAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6198B7B6DA4F7FECA16AAE16 /* Pods-KloutAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KloutAppTests.release.xcconfig"; path = "Target Support Files/Pods-KloutAppTests/Pods-KloutAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8D0F688898465D8BF3C153B /* Pods-KloutApp-KloutAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KloutApp-KloutAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C91357549B400D21A054DBA7 /* Pods-KloutAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KloutAppTests.debug.xcconfig"; path = "Target Support Files/Pods-KloutAppTests/Pods-KloutAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4223BEB2809C467CDAA4BBC /* Pods-KloutApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KloutApp.release.xcconfig"; path = "Target Support Files/Pods-KloutApp/Pods-KloutApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		276E5CFF25DC95D600C024DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777E6D88724B4258D9E84590 /* Pods_KloutApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276E5D1525DC95DA00C024DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB7FC68DBDE75911521A980 /* Pods_KloutAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276E5D2025DC95DA00C024DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149DC2ECCC09E95E9DA8A298 /* Pods_KloutApp_KloutAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		276C5EBE25E5A39700A07369 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				276C5EFF25EEC70400A07369 /* Tab 1 */,
+				276C5F1625EED30000A07369 /* AddAccountTableViewCell.swift */,
+				276C5F0825EED17500A07369 /* Tab 2 */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		276C5EC025E5A3AE00A07369 /* On Board */ = {
+			isa = PBXGroup;
+			children = (
+				276C5EC625E5A3FF00A07369 /* OpeningViewController.swift */,
+				27C49030264350E9008817D6 /* AccountGlobals.swift */,
+				276C5EC125E5A3CB00A07369 /* LogInViewController.swift */,
+			);
+			path = "On Board";
+			sourceTree = "<group>";
+		};
+		276C5EFF25EEC70400A07369 /* Tab 1 */ = {
+			isa = PBXGroup;
+			children = (
+				276C5EFA25E5D91000A07369 /* StatisticsViewController.swift */,
+				276C5F0025EEC72100A07369 /* StatisticsTableViewCell.swift */,
+				276C5F3925F7366800A07369 /* Account.swift */,
+				276C5F2125EEDDA900A07369 /* AccountStatisticsViewController.swift */,
+				276C5F2625EEE00D00A07369 /* Stats Children */,
+			);
+			path = "Tab 1";
+			sourceTree = "<group>";
+		};
+		276C5F0825EED17500A07369 /* Tab 2 */ = {
+			isa = PBXGroup;
+			children = (
+				276C5F3E25F7467A00A07369 /* SocialParentViewController.swift */,
+				27B892DB25F883FE00C651A3 /* KardViewController.swift */,
+				276C5F4925F7490100A07369 /* SharedKardsViewController.swift */,
+				27B892E625F8956100C651A3 /* KardCollectionViewCell.swift */,
+				276C5F6725F86B2400A07369 /* Kard.swift */,
+				276C5F0C25EED19E00A07369 /* ShareViewController.swift */,
+				276C5F1125EED26500A07369 /* ShareTableViewCell.swift */,
+			);
+			path = "Tab 2";
+			sourceTree = "<group>";
+		};
+		276C5F2625EEE00D00A07369 /* Stats Children */ = {
+			isa = PBXGroup;
+			children = (
+				27C490402648F786008817D6 /* ChartStatistic.swift */,
+				276C5F2725EEE02500A07369 /* PostsViewController.swift */,
+				276C5F2F25EEE03B00A07369 /* FollowersViewController.swift */,
+				276C5F3425EEE04700A07369 /* FollowingViewController.swift */,
+			);
+			path = "Stats Children";
+			sourceTree = "<group>";
+		};
+		276E5CF925DC95D600C024DA = {
+			isa = PBXGroup;
+			children = (
+				276E5D0425DC95D600C024DA /* KloutApp */,
+				276E5D1B25DC95DA00C024DA /* KloutAppTests */,
+				276E5D2625DC95DA00C024DA /* KloutAppUITests */,
+				276E5D0325DC95D600C024DA /* Products */,
+				5FC1F7B88465D77D889FE5D1 /* Pods */,
+				9C1CF52ECACA81CF8F16D65C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		276E5D0325DC95D600C024DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				276E5D0225DC95D600C024DA /* KloutApp.app */,
+				276E5D1825DC95DA00C024DA /* KloutAppTests.xctest */,
+				276E5D2325DC95DA00C024DA /* KloutAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		276E5D0425DC95D600C024DA /* KloutApp */ = {
+			isa = PBXGroup;
+			children = (
+				276E5D0525DC95D600C024DA /* AppDelegate.swift */,
+				276E5D0725DC95D600C024DA /* SceneDelegate.swift */,
+				276C5EC025E5A3AE00A07369 /* On Board */,
+				276C5EBE25E5A39700A07369 /* Tab Bar */,
+				276E5D0B25DC95D600C024DA /* Main.storyboard */,
+				276E5D3825DCA1EE00C024DA /* SettingsViewController.swift */,
+				276E5D0E25DC95D900C024DA /* Assets.xcassets */,
+				276E5D1025DC95D900C024DA /* LaunchScreen.storyboard */,
+				27C48FE52640BF61008817D6 /* GoogleService-Info.plist */,
+				276E5D1325DC95D900C024DA /* Info.plist */,
+			);
+			path = KloutApp;
+			sourceTree = "<group>";
+		};
+		276E5D1B25DC95DA00C024DA /* KloutAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				276E5D1C25DC95DA00C024DA /* KloutAppTests.swift */,
+				276E5D1E25DC95DA00C024DA /* Info.plist */,
+			);
+			path = KloutAppTests;
+			sourceTree = "<group>";
+		};
+		276E5D2625DC95DA00C024DA /* KloutAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				276E5D2725DC95DA00C024DA /* KloutAppUITests.swift */,
+				276E5D2925DC95DA00C024DA /* Info.plist */,
+			);
+			path = KloutAppUITests;
+			sourceTree = "<group>";
+		};
+		5FC1F7B88465D77D889FE5D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23A0EFE17EF324C720E937D1 /* Pods-KloutApp.debug.xcconfig */,
+				F4223BEB2809C467CDAA4BBC /* Pods-KloutApp.release.xcconfig */,
+				B8D0F688898465D8BF3C153B /* Pods-KloutApp-KloutAppUITests.debug.xcconfig */,
+				31CB3A2725874328BBBAB9C1 /* Pods-KloutApp-KloutAppUITests.release.xcconfig */,
+				C91357549B400D21A054DBA7 /* Pods-KloutAppTests.debug.xcconfig */,
+				6198B7B6DA4F7FECA16AAE16 /* Pods-KloutAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C1CF52ECACA81CF8F16D65C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BDCD92738ABAA2C94E227 /* Pods_KloutApp.framework */,
+				56D8933DB43F0DC40135D2B4 /* Pods_KloutApp_KloutAppUITests.framework */,
+				2AE436AE0B19721A28070BDE /* Pods_KloutAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		276E5D0125DC95D600C024DA /* KloutApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276E5D2C25DC95DA00C024DA /* Build configuration list for PBXNativeTarget "KloutApp" */;
+			buildPhases = (
+				A243B5265F50886C26FB2FD1 /* [CP] Check Pods Manifest.lock */,
+				276E5CFE25DC95D600C024DA /* Sources */,
+				276E5CFF25DC95D600C024DA /* Frameworks */,
+				276E5D0025DC95D600C024DA /* Resources */,
+				A679484794B8BD7B66D54BCB /* [CP] Embed Pods Frameworks */,
+				E14547CE6027C75B4C611891 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KloutApp;
+			productName = KloutApp;
+			productReference = 276E5D0225DC95D600C024DA /* KloutApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		276E5D1725DC95DA00C024DA /* KloutAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276E5D2F25DC95DA00C024DA /* Build configuration list for PBXNativeTarget "KloutAppTests" */;
+			buildPhases = (
+				B405C018AF63370EFAC85D74 /* [CP] Check Pods Manifest.lock */,
+				276E5D1425DC95DA00C024DA /* Sources */,
+				276E5D1525DC95DA00C024DA /* Frameworks */,
+				276E5D1625DC95DA00C024DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				276E5D1A25DC95DA00C024DA /* PBXTargetDependency */,
+			);
+			name = KloutAppTests;
+			productName = KloutAppTests;
+			productReference = 276E5D1825DC95DA00C024DA /* KloutAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		276E5D2225DC95DA00C024DA /* KloutAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276E5D3225DC95DA00C024DA /* Build configuration list for PBXNativeTarget "KloutAppUITests" */;
+			buildPhases = (
+				6D98BA6C4A38F11909CD2E4C /* [CP] Check Pods Manifest.lock */,
+				276E5D1F25DC95DA00C024DA /* Sources */,
+				276E5D2025DC95DA00C024DA /* Frameworks */,
+				276E5D2125DC95DA00C024DA /* Resources */,
+				9903621CC1E4986760A975A5 /* [CP] Embed Pods Frameworks */,
+				83313F6F719F3ED64AE7358A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				276E5D2525DC95DA00C024DA /* PBXTargetDependency */,
+			);
+			name = KloutAppUITests;
+			productName = KloutAppUITests;
+			productReference = 276E5D2325DC95DA00C024DA /* KloutAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		276E5CFA25DC95D600C024DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					276E5D0125DC95D600C024DA = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					276E5D1725DC95DA00C024DA = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 276E5D0125DC95D600C024DA;
+					};
+					276E5D2225DC95DA00C024DA = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 276E5D0125DC95D600C024DA;
+					};
+				};
+			};
+			buildConfigurationList = 276E5CFD25DC95D600C024DA /* Build configuration list for PBXProject "KloutApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 276E5CF925DC95D600C024DA;
+			productRefGroup = 276E5D0325DC95D600C024DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				276E5D0125DC95D600C024DA /* KloutApp */,
+				276E5D1725DC95DA00C024DA /* KloutAppTests */,
+				276E5D2225DC95DA00C024DA /* KloutAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		276E5D0025DC95D600C024DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276E5D1225DC95D900C024DA /* LaunchScreen.storyboard in Resources */,
+				27C48FE62640BF61008817D6 /* GoogleService-Info.plist in Resources */,
+				276E5D0F25DC95D900C024DA /* Assets.xcassets in Resources */,
+				276E5D0D25DC95D600C024DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276E5D1625DC95DA00C024DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276E5D2125DC95DA00C024DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D98BA6C4A38F11909CD2E4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KloutApp-KloutAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83313F6F719F3ED64AE7358A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9903621CC1E4986760A975A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KloutApp-KloutAppUITests/Pods-KloutApp-KloutAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A243B5265F50886C26FB2FD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KloutApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A679484794B8BD7B66D54BCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp/Pods-KloutApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp/Pods-KloutApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KloutApp/Pods-KloutApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B405C018AF63370EFAC85D74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KloutAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14547CE6027C75B4C611891 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp/Pods-KloutApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KloutApp/Pods-KloutApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KloutApp/Pods-KloutApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		276E5CFE25DC95D600C024DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276C5F2825EEE02500A07369 /* PostsViewController.swift in Sources */,
+				276C5EC225E5A3CB00A07369 /* LogInViewController.swift in Sources */,
+				276C5EC725E5A3FF00A07369 /* OpeningViewController.swift in Sources */,
+				276E5D0625DC95D600C024DA /* AppDelegate.swift in Sources */,
+				276C5F3525EEE04700A07369 /* FollowingViewController.swift in Sources */,
+				276C5F3A25F7366800A07369 /* Account.swift in Sources */,
+				276C5F6825F86B2400A07369 /* Kard.swift in Sources */,
+				276C5EFB25E5D91000A07369 /* StatisticsViewController.swift in Sources */,
+				276C5F0125EEC72100A07369 /* StatisticsTableViewCell.swift in Sources */,
+				276C5F2225EEDDA900A07369 /* AccountStatisticsViewController.swift in Sources */,
+				27B892E725F8956100C651A3 /* KardCollectionViewCell.swift in Sources */,
+				27C490412648F786008817D6 /* ChartStatistic.swift in Sources */,
+				27C49031264350EA008817D6 /* AccountGlobals.swift in Sources */,
+				276E5D0825DC95D600C024DA /* SceneDelegate.swift in Sources */,
+				276C5F1225EED26500A07369 /* ShareTableViewCell.swift in Sources */,
+				276C5F1725EED30000A07369 /* AddAccountTableViewCell.swift in Sources */,
+				27B892DC25F883FE00C651A3 /* KardViewController.swift in Sources */,
+				276C5F3025EEE03B00A07369 /* FollowersViewController.swift in Sources */,
+				276C5F0D25EED19E00A07369 /* ShareViewController.swift in Sources */,
+				276C5F4A25F7490100A07369 /* SharedKardsViewController.swift in Sources */,
+				276C5F3F25F7467A00A07369 /* SocialParentViewController.swift in Sources */,
+				276E5D3925DCA1EE00C024DA /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276E5D1425DC95DA00C024DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276E5D1D25DC95DA00C024DA /* KloutAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276E5D1F25DC95DA00C024DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276E5D2825DC95DA00C024DA /* KloutAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		276E5D1A25DC95DA00C024DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 276E5D0125DC95D600C024DA /* KloutApp */;
+			targetProxy = 276E5D1925DC95DA00C024DA /* PBXContainerItemProxy */;
+		};
+		276E5D2525DC95DA00C024DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 276E5D0125DC95D600C024DA /* KloutApp */;
+			targetProxy = 276E5D2425DC95DA00C024DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		276E5D0B25DC95D600C024DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276E5D0C25DC95D600C024DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		276E5D1025DC95D900C024DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276E5D1125DC95D900C024DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		276E5D2A25DC95DA00C024DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		276E5D2B25DC95DA00C024DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		276E5D2D25DC95DA00C024DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A0EFE17EF324C720E937D1 /* Pods-KloutApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYYQ8KVHFM;
+				INFOPLIST_FILE = KloutApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Burns.KloutApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		276E5D2E25DC95DA00C024DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4223BEB2809C467CDAA4BBC /* Pods-KloutApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYYQ8KVHFM;
+				INFOPLIST_FILE = KloutApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Burns.KloutApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		276E5D3025DC95DA00C024DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91357549B400D21A054DBA7 /* Pods-KloutAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYYQ8KVHFM;
+				INFOPLIST_FILE = KloutAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Burns.KloutAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KloutApp.app/KloutApp";
+			};
+			name = Debug;
+		};
+		276E5D3125DC95DA00C024DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6198B7B6DA4F7FECA16AAE16 /* Pods-KloutAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYYQ8KVHFM;
+				INFOPLIST_FILE = KloutAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Burns.KloutAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KloutApp.app/KloutApp";
+			};
+			name = Release;
+		};
+		276E5D3325DC95DA00C024DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D0F688898465D8BF3C153B /* Pods-KloutApp-KloutAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYYQ8KVHFM;
+				INFOPLIST_FILE = KloutAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Burns.KloutAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KloutApp;
+			};
+			name = Debug;
+		};
+		276E5D3425DC95DA00C024DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31CB3A2725874328BBBAB9C1 /* Pods-KloutApp-KloutAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYYQ8KVHFM;
+				INFOPLIST_FILE = KloutAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Burns.KloutAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KloutApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		276E5CFD25DC95D600C024DA /* Build configuration list for PBXProject "KloutApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276E5D2A25DC95DA00C024DA /* Debug */,
+				276E5D2B25DC95DA00C024DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276E5D2C25DC95DA00C024DA /* Build configuration list for PBXNativeTarget "KloutApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276E5D2D25DC95DA00C024DA /* Debug */,
+				276E5D2E25DC95DA00C024DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276E5D2F25DC95DA00C024DA /* Build configuration list for PBXNativeTarget "KloutAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276E5D3025DC95DA00C024DA /* Debug */,
+				276E5D3125DC95DA00C024DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276E5D3225DC95DA00C024DA /* Build configuration list for PBXNativeTarget "KloutAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276E5D3325DC95DA00C024DA /* Debug */,
+				276E5D3425DC95DA00C024DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 276E5CFA25DC95D600C024DA /* Project object */;
+}

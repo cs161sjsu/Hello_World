@@ -1,0 +1,17 @@
+.App {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F7F9;
+}
+
+.App > .Navbar {
+  height: 98vh;
+  padding: 50 0 0 10;
+  width: auto;
+}
+
+.App > .appContent{ 
+  margin-left: 95px;
+  padding-right: 40px;
+}
